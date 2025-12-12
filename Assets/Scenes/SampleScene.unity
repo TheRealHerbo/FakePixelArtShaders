@@ -480,6 +480,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 853342122966069204, guid: 73e37106ebb124653970704a0c528cc3, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 853342122966069204, guid: 73e37106ebb124653970704a0c528cc3, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ffababc64710ac348b6b036475c63315, type: 2}
+    - target: {fileID: 853342122966069204, guid: 73e37106ebb124653970704a0c528cc3, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: b10c3b18ebcc5154c8b41aa43ae50ade, type: 3}
     - target: {fileID: 919132149155446097, guid: 73e37106ebb124653970704a0c528cc3, type: 3}
       propertyPath: m_Name
       value: Ch43_nonPBR@Silly Dancing
@@ -488,6 +500,14 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 52eb843a2bc91bd4881e6c72cc85984f, type: 2}
+    - target: {fileID: 6115111854987448992, guid: 73e37106ebb124653970704a0c528cc3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.993
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115111854987448992, guid: 73e37106ebb124653970704a0c528cc3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.134
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
