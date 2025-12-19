@@ -1097,8 +1097,8 @@
     "m_ObjectId": "7f07c077d69e4fbd90616e5b6048b3e4",
     "m_Title": "Get Ramp",
     "m_Position": {
-        "x": -1601.0,
-        "y": 78.00007629394531
+        "x": -1600.9998779296875,
+        "y": 77.99996948242188
     }
 }
 
@@ -1108,8 +1108,8 @@
     "m_ObjectId": "80eab6474fa24305bb3ca8d5c4b3a72f",
     "m_Title": "Get Main Light",
     "m_Position": {
-        "x": -2945.0,
-        "y": 509.9998779296875
+        "x": -2944.999755859375,
+        "y": 510.0
     }
 }
 
@@ -1531,7 +1531,7 @@
     "m_PerRendererData": false,
     "m_customAttributes": [],
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"34892be16c52f1948b4b5666052d6bf5\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"c1e4398c8c45ed44b9e4174d9f1d7b47\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -1774,8 +1774,8 @@
     "m_ObjectId": "c3bde6e3e9b44e029f07d27cd8d3bd57",
     "m_Title": "Normalize",
     "m_Position": {
-        "x": -2174.999755859375,
-        "y": 141.0
+        "x": -2175.0,
+        "y": 140.99996948242188
     }
 }
 
