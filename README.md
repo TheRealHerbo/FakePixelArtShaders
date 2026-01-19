@@ -14,11 +14,50 @@ What are the limitations of the process?
 
 I will recreate the shaders in Unity with the shader graph tool. I want to have a demo with the shaders on and without the shaders to compare on a 3D model. 
 
+## Use
+### Phase 1: Create the Material
+Shader Graphs cannot be assigned directly to the renderer; they must be wrapped in a Material.
 
-## Outcomes
-### Shader graph
+-In your Project window, right-click on your shader graph file.
 
-<img width="2116" height="658" alt="Screenshot From 2025-12-10 20-39-28" src="https://github.com/user-attachments/assets/7e82d89d-9d93-4833-b1dc-61b03c39b70d" />
+  - Select Create > Material.
 
-### How it looks on models:
-<img width="2862" height="1510" alt="Screenshot From 2025-12-10 20-37-03" src="https://github.com/user-attachments/assets/f884b0e7-bd5d-4482-af0f-2a87adef317e" />
+  - Name it something like Mat_PixelArt.
+
+### Phase 2: Add the Render Feature
+Since this is a fullscreen effect, you don't drag it onto an object in the scene. You add it to the graphics pipeline itself.
+
+Apply shader to renderer:
+
+- Go to Assets > Settings and open the PC_Renderer asset.
+
+- In the inspector go to Full Screen Pass Renderer Feature.
+
+- Set the Pass Material to you newly created material (Mat_PixelArt).
+
+### Phase 3: Set Camera to Orthographic
+To achieve a pixel art 2D look you have to set the camera to Ortographic view.
+
+Select your Main Camera in the Hierarchy.
+
+- In the Inspector, find the Camera component.
+
+  - Change Projection from Perspective to Orthographic.
+
+### Phase 4: Configure the Parameters
+- Select your Mat_PixelArt material.
+
+- In the Inspector, you need to set values for the properties you exposed:
+
+- Pixel Resolution: Try 320 or 480 (This sets the vertical pixel count). Make sure the selected number is a multiple of 4, if not the pixels will be different sizes.
+
+- Color Count: Try 16 or 32. (If this is 0 or 1, your screen might turn black or solid white).
+
+- Dither Pattern: For me the best results were between 0-1. Try a couple and see which number you like.
+
+
+There are also other tools that can be considered for pixelizing models that are more like the tool developed by Motion Twin:
+
+Pro Pixelizer: https://propixelizer.github.io/docs/usage/pixelization/
+
+Pixelover: https://docs.pixelover.io/manual/introduction/
